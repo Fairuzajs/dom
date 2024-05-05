@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'Ruberoid Bold';
+    src: url('./Ruberoid-Bold.woff') format('woff'),
+        url('./Ruberoid-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+$ruberoid700: 'Ruberoid Bold';
+
+@font-face {
+    font-family: 'Ruberoid ExtraBold';
+    src: url('./Ruberoid-ExtraBold.woff') format('woff'),
+        url('./Ruberoid-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+$ruberoid800: 'Ruberoid ExtraBold';
+
+@font-face {
+    font-family: 'Ruberoid Medium';
+    src: url('./Ruberoid-Medium.woff') format('woff'),
+        url('./Ruberoid-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+$ruberoid500: 'Ruberoid Medium';
+
+@font-face {
+    font-family: 'Ruberoid Regular';
+    src: url('./Ruberoid-Regular.woff') format('woff'),
+        url('./Ruberoid-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+$ruberoid400: 'Ruberoid Regular';
+
