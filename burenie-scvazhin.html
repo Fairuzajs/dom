@@ -9,25 +9,63 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="shortcut icon" href="./img/icons/лого.svg" type="image/x-icon">
   </head>
-
   <body>
     <header class="header-section">
       <div class="container">
         <div class="header">
-          <div class="logo">
-            <a href="index.html">
-              <img src="./img/logo-main.png" alt="logo img" />
-            </a>
+          <div class="header__logo">
+            <div class="header__logo-img">
+              <a href="./index.html">
+                <img src="./img/icons/лого.png" alt="logo img" />
+                <div class="header__logo-text">
+                  <p class="header__logo-name">
+                    ДОМ<br />
+                    ИНЖИНИРИНГ
+                  </p>
+                  <p class="header__logo-about">
+                    ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
+                  </p>
+                </div>
+              </a>
+            </div>
+               
+              
           </div>
-          <nav class="menu">
-            <ul class="menu__item">
-              <li><a class="menu__link" href="./index.html#about">О нас</a></li>
-              <li><a class="menu__link" href="./index.html#service">Услуги</a></li>
-              <li>
-                <a class="menu__link" href="./index.html#delivary">Доставка и оплата</a>
+          <div class="menu-btn" id="menuBtn" data-burger>
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5882 15.2941C18.5882 17.1134 17.1134 18.5882 15.2941 18.5882C13.4748 18.5882 12 17.1134 12 15.2941C12 13.4748 13.4748 12 15.2941 12C17.1134 12 18.5882 13.4748 18.5882 15.2941Z" fill="all"/>
+              <path d="M28 15.2941C28 17.1134 26.5252 18.5882 24.7059 18.5882C22.8866 18.5882 21.4118 17.1134 21.4118 15.2941C21.4118 13.4748 22.8866 12 24.7059 12C26.5252 12 28 13.4748 28 15.2941Z" fill="all"/>
+              <path d="M18.5882 24.7059C18.5882 26.5252 17.1134 28 15.2941 28C13.4748 28 12 26.5252 12 24.7059C12 22.8866 13.4748 21.4118 15.2941 21.4118C17.1134 21.4118 18.5882 22.8866 18.5882 24.7059Z" fill="all"/>
+              <path d="M28 24.7059C28 26.5252 26.5252 28 24.7059 28C22.8866 28 21.4118 26.5252 21.4118 24.7059C21.4118 22.8866 22.8866 21.4118 24.7059 21.4118C26.5252 21.4118 28 22.8866 28 24.7059Z" fill="all"/>
+            </svg>
+          </div>
+          <nav class="menu" id="menu" data-menu>
+            <img class="btn-close" src="./img/icons/btn-close.svg" alt="">
+            <ul class="menu__item" data-menu-list>
+              <li data-menu-item>
+                <a class="menu__link" href="./about-our-company.html">О нас</a>
               </li>
-              <li><a class="menu__link" href="./index.html#contact">Контакты</a></li>
+
+              <li data-menu-item>
+                <a class="menu__link" href="./uslugu-companii.html">Услуги</a>
+              </li>
+
+              <li data-menu-item>
+                <a class="menu__link" href="./dostavka-i-oplata.html">Доставка и оплата</a>
+              </li>
             </ul>
+            <a class="btn link-menu" data-path="first">
+              <span>Заказать звонок</span>
+              <img
+                src="./img/icons/ph_phone-thin.png"
+                alt="phone-thin icon"
+              />
+            </a>
+            <div class="header__contact_menu">
+              <a href="tel:79773363029">8 (977) 336-30-29</a>
+              <a href="mailto: Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+            </div>
+            <p class="menu-pravo">© 2017 ИП «Сундупов М.В.». Все права защищены.</p>
           </nav>
           <div class="header__contact">
             <a href="tel:79773363029">8 (977) 336-30-29</a>
@@ -36,7 +74,6 @@
         </div>
       </div>
     </header>
-
     <div class="to-the-main">
       <div class="container">
         <a class="to-the-main-link" href="./index.html">
@@ -79,7 +116,7 @@
               водой вашего загородного участка
             </p>
           </div>
-          <a class="btn btn-text" href="">
+          <a class="btn btn-text" data-path="first">
             <span>Заказать звонок</span>
             <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
           </a>
@@ -128,8 +165,8 @@
       <div class="container">
         <div class="footer">
           <div class="footer-top">
-            <div class="footer__logo">
-              <div class="footer__logo-img">
+            <div class="footer__logo-img">
+              <a href="./index.html">
                 <img src="./img/icons/лого.png" alt="logo img" />
                 <div class="footer__logo-text">
                   <p class="footer__logo-name">
@@ -140,77 +177,13 @@
                     ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
                   </p>
                 </div>
-              </div>
-              <div class="footer__social-links">
-                <a
-                  class="social-links"
-                  href="https://www.instagram.com/dom.engineering.ru?igsh=N2Z4b2Jjd2VrbzBp"
-                  target="_blank"
-                >
-                  <svg
-                    width="30"
-                    height="29"
-                    viewBox="0 0 30 29"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.02812 0.363281H20.904C25.4281 0.363281 29.104 4.03914 29.104 8.56328V20.4391C29.104 22.6139 28.2401 24.6996 26.7023 26.2374C25.1645 27.7752 23.0788 28.6391 20.904 28.6391H9.02812C4.50399 28.6391 0.828125 24.9633 0.828125 20.4391V8.56328C0.828125 6.38851 1.69205 4.3028 3.22985 2.76501C4.76765 1.22721 6.85335 0.363281 9.02812 0.363281ZM8.74537 3.19087C7.39551 3.19087 6.10093 3.7271 5.14644 4.68159C4.19194 5.63609 3.65571 6.93066 3.65571 8.28052V20.7219C3.65571 23.5353 5.93192 25.8116 8.74537 25.8116H21.1867C22.5366 25.8116 23.8312 25.2753 24.7857 24.3208C25.7402 23.3663 26.2764 22.0718 26.2764 20.7219V8.28052C26.2764 5.46707 24.0002 3.19087 21.1867 3.19087H8.74537ZM22.3885 5.31156C22.8572 5.31156 23.3067 5.49775 23.6381 5.82917C23.9695 6.16059 24.1557 6.6101 24.1557 7.0788C24.1557 7.5475 23.9695 7.997 23.6381 8.32843C23.3067 8.65985 22.8572 8.84604 22.3885 8.84604C21.9198 8.84604 21.4703 8.65985 21.1388 8.32843C20.8074 7.997 20.6212 7.5475 20.6212 7.0788C20.6212 6.6101 20.8074 6.16059 21.1388 5.82917C21.4703 5.49775 21.9198 5.31156 22.3885 5.31156ZM14.9661 7.43225C16.8409 7.43225 18.6389 8.17701 19.9646 9.5027C21.2903 10.8284 22.035 12.6264 22.035 14.5012C22.035 16.376 21.2903 18.174 19.9646 19.4997C18.6389 20.8254 16.8409 21.5702 14.9661 21.5702C13.0912 21.5702 11.2932 20.8254 9.96754 19.4997C8.64185 18.174 7.89709 16.376 7.89709 14.5012C7.89709 12.6264 8.64185 10.8284 9.96754 9.5027C11.2932 8.17701 13.0912 7.43225 14.9661 7.43225ZM14.9661 10.2598C13.8412 10.2598 12.7624 10.7067 11.9669 11.5021C11.1715 12.2975 10.7247 13.3763 10.7247 14.5012C10.7247 15.6261 11.1715 16.7049 11.9669 17.5003C12.7624 18.2957 13.8412 18.7426 14.9661 18.7426C16.0909 18.7426 17.1698 18.2957 17.9652 17.5003C18.7606 16.7049 19.2074 15.6261 19.2074 14.5012C19.2074 13.3763 18.7606 12.2975 17.9652 11.5021C17.1698 10.7067 16.0909 10.2598 14.9661 10.2598Z"
-                      fill="all"
-                    />
-                  </svg>
-                </a>
-                <a class="social-links" href="" target="_blank">
-                  <svg
-                    width="35"
-                    height="35"
-                    viewBox="0 0 35 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M30.6218 7.60352L3.75977 18.207L13.6563 19.6208M30.6218 7.60352L27.0874 28.8104L13.6563 19.6208M30.6218 7.60352L13.6563 19.6208M13.6563 19.6208V27.3966L18.2497 22.7636"
-                      stroke="all"
-                      stroke-width="2.12069"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-                <a
-                  class="social-links"
-                  href="https://youtube.com/@dom.inziniring77?si=zrkspwjxAyrlEYWT"
-                  target="_blank"
-                >
-                  <svg
-                    width="42"
-                    height="41"
-                    viewBox="0 0 42 41"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.3122 8.89464C15.0469 8.65889 18.7292 8.54102 21.36 8.54102C23.9909 8.54102 27.6749 8.65889 32.4121 8.89549C33.6517 8.95736 34.8268 9.46699 35.7191 10.3297C36.6113 11.1925 37.1602 12.3497 37.2638 13.5866C37.4807 16.1781 37.5892 18.4605 37.5892 20.4344C37.5892 22.4323 37.4782 24.7463 37.2561 27.3771C37.153 28.5997 36.6146 29.7448 35.7389 30.6042C34.8632 31.4637 33.7082 31.9804 32.4838 32.0605C28.4342 32.3253 24.7263 32.4577 21.36 32.4577C17.9946 32.4577 14.2875 32.3253 10.2405 32.0605C9.01652 31.9805 7.86186 31.4641 6.98619 30.6052C6.11053 29.7463 5.57194 28.6018 5.46826 27.3797C5.24361 24.7292 5.13086 22.4135 5.13086 20.4344C5.13086 18.4784 5.24105 16.1952 5.45971 13.584C5.56365 12.3475 6.1127 11.1906 7.00494 10.3282C7.89718 9.46585 9.07202 8.95646 10.3114 8.89464H10.3122Z"
-                      stroke="all"
-                      stroke-width="2.82759"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M18.7988 16.7492V24.2625C18.7988 24.3948 18.8346 24.5246 18.9024 24.6382C18.9703 24.7518 19.0677 24.8449 19.1842 24.9075C19.3008 24.9702 19.4321 25.0001 19.5643 24.994C19.6965 24.988 19.8245 24.9462 19.9349 24.8732L25.5698 21.149C25.6705 21.0826 25.7533 20.9924 25.8107 20.8863C25.8681 20.7802 25.8984 20.6616 25.8989 20.5409C25.8994 20.4203 25.8701 20.3014 25.8136 20.1949C25.7571 20.0883 25.6751 19.9974 25.5749 19.9301L19.9391 16.141C19.829 16.067 19.7008 16.0243 19.5683 16.0176C19.4358 16.0108 19.3039 16.0401 19.1867 16.1025C19.0696 16.1649 18.9717 16.2579 18.9033 16.3717C18.835 16.4855 18.7989 16.6157 18.7988 16.7484V16.7492Z"
-                      stroke="all"
-                      stroke-width="2.82759"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
+              </a>
             </div>
             <div class="footer__menu">
               <ul>
-                <li><a href="./index.html#about">О нас</a></li>
-                <li><a href="./index.html#service">Услуги</a></li>
-                <li><a href="./index.html#delivary">Доставка и оплата</a></li>
-                <li><a href="./index.html#contact">Контакты</a></li>
+                <li><a href="./about-our-company.html">О нас</a></li>
+                <li><a href="./uslugu-companii.html">Услуги</a></li>
+                <li><a href="./dostavka-i-oplata.html">Доставка и оплата</a></li>
               </ul>
             </div>
             <div class="footer__contacts">
@@ -229,17 +202,43 @@
               </div>
             </div>
           </div>
-          <div class="footer-bottom">
-            <p>© 2017 ИП «Сундупов М.В.». Все права защищены.</p>
-            <p><a href="">Политика персональных данных</a></p>
-            <p>
-              дизайн сайта -
-              <a href="https://ddmotina.tilda.ws" target="_blank">&nbsp; d_d_motina</a>
-            </p>
+          <div class="footer-bottom">         
+            <a href="">Политика конфиденциальности</a>
+            <div class="footer-bottom__about">
+              <p>© 2017 ИП «Сундупов М.В.». <br>Все права защищены.</p>
+              <p>
+                Разработка сайта -
+                <a href="https://ddmotina.tilda.ws" target="_blank">&nbsp; d_d_motina</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__container" data-target="first">
+        <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
+        <form class="form" action="">
+          <div class="input-block">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Электронная почта" />
+            <input type="tel" class="input-tel" placeholder="Телефон" />
+            <input type="text" placeholder="Интересующая услуга" />
+          </div>
+          <div class="bnt-checkbox">
+            <input class="checkbox" type="checkbox" id="checkboxOpd" />
+            <label for="checkboxOpd"></label>
+            <p class="paragraph-opd">
+              Я даю согласие на
+              <a href="">обработку своих персональных данных</a> в соответствии
+              со статьей 9 Федерального закона от 27 июля 2006 г. №152-ФЗ “О
+              персональных данных”
+            </p>
+          </div>
+          <button class="btn btn-text" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

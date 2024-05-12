@@ -4,47 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Станции биологической очистки</title>
-    <meta name="description" content="Доверьтесь опыту и профессионализму
+    <meta
+      name="description"
+      content="Доверьтесь опыту и профессионализму
     Дом Инжиниринг чтобы обеспечить вашему дому надежную и
     эффективную систему биологической очистки, соответствующую самым
-    высоким стандартам качества и безопасности">
+    высоким стандартам качества и безопасности"
+    />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" href="./img/icons/лого.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/icons/лого.svg" type="image/x-icon" />
   </head>
 
   <body>
     <header class="header-section">
       <div class="container">
         <div class="header">
-          <div class="logo">
-            <a href="index.html">
-              <img src="./img/logo-main.png" alt="logo img" />
-            </a>
+          <div class="header__logo">
+            <div class="header__logo-img">
+              <a href="./index.html">
+                <img src="./img/icons/лого.png" alt="logo img" />
+                <div class="header__logo-text">
+                  <p class="header__logo-name">
+                    ДОМ<br />
+                    ИНЖИНИРИНГ
+                  </p>
+                  <p class="header__logo-about">
+                    ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
+                  </p>
+                </div>
+              </a>
+            </div>
+               
+              
           </div>
-          <nav class="menu">
-            <ul class="menu__item">
-              <li><a class="menu__link" href="./index.html#about">О нас</a></li>
-              <li>
-                <a class="menu__link" href="./index.html#service">Услуги</a>
+          <div class="menu-btn" id="menuBtn" data-burger>
+            <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5882 15.2941C18.5882 17.1134 17.1134 18.5882 15.2941 18.5882C13.4748 18.5882 12 17.1134 12 15.2941C12 13.4748 13.4748 12 15.2941 12C17.1134 12 18.5882 13.4748 18.5882 15.2941Z"
+                fill="all"
+              />
+              <path
+                d="M28 15.2941C28 17.1134 26.5252 18.5882 24.7059 18.5882C22.8866 18.5882 21.4118 17.1134 21.4118 15.2941C21.4118 13.4748 22.8866 12 24.7059 12C26.5252 12 28 13.4748 28 15.2941Z"
+                fill="all"
+              />
+              <path
+                d="M18.5882 24.7059C18.5882 26.5252 17.1134 28 15.2941 28C13.4748 28 12 26.5252 12 24.7059C12 22.8866 13.4748 21.4118 15.2941 21.4118C17.1134 21.4118 18.5882 22.8866 18.5882 24.7059Z"
+                fill="all"
+              />
+              <path
+                d="M28 24.7059C28 26.5252 26.5252 28 24.7059 28C22.8866 28 21.4118 26.5252 21.4118 24.7059C21.4118 22.8866 22.8866 21.4118 24.7059 21.4118C26.5252 21.4118 28 22.8866 28 24.7059Z"
+                fill="all"
+              />
+            </svg>
+          </div>
+          <nav class="menu" id="menu" data-menu>
+            <img class="btn-close" src="./img/icons/btn-close.svg" alt="" />
+            <ul class="menu__item" data-menu-list>
+              <li data-menu-item>
+                <a class="menu__link" href="./about-our-company.html">О нас</a>
               </li>
-              <li>
-                <a class="menu__link" href="./index.html#delivary"
-                  >Доставка и оплата</a
-                >
+
+              <li data-menu-item>
+                <a class="menu__link" href="./uslugu-companii.html">Услуги</a>
               </li>
-              <li>
-                <a class="menu__link" href="./index.html#contact">Контакты</a>
+
+              <li data-menu-item>
+                <a class="menu__link" href="./dostavka-i-oplata.html">Доставка и оплата</a>
               </li>
             </ul>
+            <a class="btn link-menu" data-path="first">
+              <span>Заказать звонок</span>
+              <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
+            </a>
+            <div class="header__contact_menu">
+              <a href="tel:79773363029">8 (977) 336-30-29</a>
+              <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+            </div>
+            <p class="menu-pravo">
+              © 2017 ИП «Сундупов М.В.». Все права защищены.
+            </p>
           </nav>
           <div class="header__contact">
             <a href="tel:79773363029">8 (977) 336-30-29</a>
-            <a href="mailto: Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+            <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
           </div>
         </div>
       </div>
     </header>
-
     <div class="to-the-main">
       <div class="container">
         <a class="to-the-main-link" href="./uslugu-companii.html">
@@ -86,12 +138,9 @@
               высоким стандартам качества и безопасности
             </p>
           </div>
-          <a class="btn btn-text" href="">
+          <a class="btn btn-text" data-path="first">
             <span>Заказать звонок</span>
-            <img
-              src="./img/icons/ph_phone-thin.png"
-              alt="phone-thin icon"
-            />
+            <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
           </a>
         </div>
 
@@ -132,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="section-biodevice">
+    <section class="section-biodevice section-biodevice__page">
       <div class="container">
         <div class="biodevice">
           <div class="biodevice__top">
@@ -166,28 +215,46 @@
             <p class="biodevice-header">Характеристики:</p>
             <ul class="biodevice__list">
               <li class="biodevice__item">
-                &bull;&nbsp;&nbsp;Подходит для 3 пользователей
+                <img
+                  src="img/biodevice/Ellipse.png"
+                  alt="ellipce icon"
+                />&nbsp;&nbsp;&nbsp;Подходит для 3 пользователей
               </li>
               <li class="biodevice__item">
-                &bull;&nbsp;&nbsp;Производительность 0.6 м3/сут
+                <img
+                  src="img/biodevice/Ellipse.png"
+                  alt="ellipce icon"
+                />&nbsp;&nbsp;&nbsp;Производительность 0.6 м3/сут
               </li>
               <li class="biodevice__item">
-                &bull;&nbsp;&nbsp;Энергопотребление - 1.2 кВт*сут
+                <img
+                  src="img/biodevice/Ellipse.png"
+                  alt="ellipce icon"
+                />&nbsp;&nbsp;&nbsp;Энергопотребление - 1.2 кВт*сут
               </li>
               <li class="biodevice__item">
-                &bull;&nbsp;&nbsp;Залповый сброс - 153 л
+                <img
+                  src="img/biodevice/Ellipse.png"
+                  alt="ellipce icon"
+                />&nbsp;&nbsp;&nbsp;Залповый сброс - 153 л
               </li>
-              <li class="biodevice__item">&bull;&nbsp;&nbsp;Вес - 100кг</li>
               <li class="biodevice__item">
-                &bull;&nbsp;&nbsp;Габариты (д*ш*в, м) - 0.94*0.94*1.844
+                <img src="img/biodevice/Ellipse.png" alt="ellipce icon" />
+                &nbsp;&nbsp;&nbsp;Вес - 100кг
               </li>
+              <li class="biodevice__item">
+                <img
+                  src="img/biodevice/Ellipse.png"
+                  alt="ellipce icon"
+                />&nbsp;&nbsp;&nbsp;Габариты (д*ш*в, м) -
+                <br />
+                &nbsp;&nbsp;&nbsp;0.94*0.94*1.844
+              </li>
+              
             </ul>
-            <a class="btn btn-text" href="">
+            <a class="btn btn-text" data-path="first">
               <span>Заказать звонок</span>
-              <img
-                src="./img/icons/ph_phone-thin.png"
-                alt="phone-thin icon"
-              />
+              <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
             </a>
           </div>
           <div class="biodevice__img">
@@ -206,7 +273,9 @@
       </div>
     </section>
 
-    <section class="biodevice-advantage-section">
+    <section
+      class="biodevice-advantage-section biodevice-advantage-section__page"
+    >
       <div class="container">
         <div class="biodevice-advantage">
           <img
@@ -272,153 +341,142 @@
             </div>
             <div class="slider-one">
               <div class="slider-list">
-                
-                  <div class="biodevice-one">
-                    <div class="biodevice__top">
-                      <h3>116 900₽</h3>
-                    </div>
-                    <div class="biodevice__bottom">
-                
-                        <h3 class="biodevice__top-h3">116 900₽</h3>
-            
-                      <p class="biodevice__bottom-decscr">
-                        Насосная автономная станция очистки бытовых стоков для
-                        загородного участка с сезонным или постоянным
-                        проживанием
-                      </p>
-                      <p class="biodevice-header">Характеристики:</p>
-                      <ul class="biodevice__list">
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Не требует доочистки стоков
-                        </li>
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Семья от 2-х человек
-                        </li>
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;1 санузел, 2 крана и душ
-                        </li>
-                      </ul>
-                      <a class="btn btn-text" href="">
-                        <span>Заказать звонок</span>
-                        <img
-                          src="./img/icons/ph_phone-thin.png"
-                          alt="phone-thin icon"
-                        />
-                      </a>
-                    </div>
-                    <div class="biodevice__img">
-                      <p class="biodevice__img-description">
-                        Анаэробный энергонезависимый септик
-                      </p>
-                      <h2 class="biodevice__img-title">Евролос био</h2>
-                      <div class="bio-img">
-                        <img
-                          src="./img/biodevice/eurolos bio.png"
-                          alt="biodevice standart 3"
-                        />
-                      </div>
+                <div class="biodevice-one">
+                  <div class="biodevice__top">
+                    <h3>116 900 ₽</h3>
+                  </div>
+                  <div class="biodevice__bottom">
+                    <h3 class="biodevice__top-h3">116 900 ₽</h3>
+
+                    <p class="biodevice__bottom-decscr">
+                      Насосная автономная станция очистки бытовых стоков для
+                      загородного участка с сезонным или постоянным проживанием
+                    </p>
+                    <p class="biodevice-header">Характеристики:</p>
+                    <ul class="biodevice__list">
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Не требует доочистки стоков
+                      </li>
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Семья от 2-х человек
+                      </li>
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;1 санузел, 2 крана и душ
+                      </li>
+                    </ul>
+                    <a class="btn btn-text" data-path="first">
+                      <span>Заказать звонок</span>
+                      <img
+                        src="./img/icons/ph_phone-thin.png"
+                        alt="phone-thin icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="biodevice__img">
+                    <p class="biodevice__img-description">
+                      Анаэробный энергонезависимый септик
+                    </p>
+                    <h2 class="biodevice__img-title">Евролос био</h2>
+                    <div class="bio-img">
+                      <img
+                        src="./img/biodevice/eurolos bio.png"
+                        alt="biodevice standart 3"
+                      />
                     </div>
                   </div>
-                
+                </div>
               </div>
               <div class="slider-list">
-          
-                  <div class="biodevice-one">
-                    <div class="biodevice__top">
-                      <h3>123 500₽</h3>
-                    </div>
-                    <div class="biodevice__bottom">
-            
-                        <h3 class="biodevice__top-h3">123 500₽</h3>
-                   
-                      <p class="biodevice__bottom-decscr">
-                        Компрессорная установка глубокой биологической очистки
-                        для автономной канализации в частном доме ПМЖ проживания
-                      </p>
-                      <p class="biodevice-header">Характеристики:</p>
-                      <ul class="biodevice__list">
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Биологическая очистка стоков
-                        </li>
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Семья от 2-х человек
-                        </li>
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Один санузел + душ
-                        </li>
-                      </ul>
-                      <a class="btn btn-text" href="">
-                        <span>Заказать звонок</span>
-                        <img
-                          src="./img/icons/ph_phone-thin.png"
-                          alt="phone-thin icon"
-                        />
-                      </a>
-                    </div>
-                    <div class="biodevice__img">
-                      <p class="biodevice__img-description">
-                        Аэрационная установка биологической очистки
-                      </p>
-                      <h2 class="biodevice__img-title">Евролос Про</h2>
-                      <div class="bio-img">
-                        <img
-                          src="./img/biodevice/евролос про.png"
-                          alt="biodevice standart 3"
-                        />
-                      </div>
+                <div class="biodevice-one">
+                  <div class="biodevice__top">
+                    <h3>123 500 ₽</h3>
+                  </div>
+                  <div class="biodevice__bottom">
+                    <h3 class="biodevice__top-h3">123 500 ₽</h3>
+
+                    <p class="biodevice__bottom-decscr">
+                      Компрессорная установка глубокой биологической очистки для
+                      автономной канализации в частном доме ПМЖ проживания
+                    </p>
+                    <p class="biodevice-header">Характеристики:</p>
+                    <ul class="biodevice__list">
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Биологическая очистка стоков
+                      </li>
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Семья от 2-х человек
+                      </li>
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Один санузел + душ
+                      </li>
+                    </ul>
+                    <a class="btn btn-text" data-path="first">
+                      <span>Заказать звонок</span>
+                      <img
+                        src="./img/icons/ph_phone-thin.png"
+                        alt="phone-thin icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="biodevice__img">
+                    <p class="biodevice__img-description">
+                      Аэрационная установка биологической очистки
+                    </p>
+                    <h2 class="biodevice__img-title">Евролос Про</h2>
+                    <div class="bio-img">
+                      <img
+                        src="./img/biodevice/евролос про.png"
+                        alt="biodevice standart 3"
+                      />
                     </div>
                   </div>
-                
+                </div>
               </div>
               <div class="slider-list">
-                
-                  <div class="biodevice-one">
-                    <div class="biodevice__top">
-                      <h3>168 700₽</h3>
-                    </div>
-                    <div class="biodevice__bottom">
-                      
-                        <h3 class="biodevice__top-h3">168 700₽</h3>
-                      
-                      <p class="biodevice__bottom-decscr">
-                        Компрессорная аэрационная установка премиум класса для
-                        монтажа и работы в условиях высокого уровня грунтовых
-                        вод
-                      </p>
-                      <p class="biodevice-header">Характеристики:</p>
-                      <ul class="biodevice__list">
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Максимальная очистка стоков
-                        </li>
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Семья от 2-х человек
-                        </li>
-                        <li class="biodevice__item">
-                          &bull;&nbsp;&nbsp;Простота обслуживания
-                        </li>
-                      </ul>
-                      <a class="btn btn-text" href="">
-                        <span>Заказать звонок</span>
-                        <img
-                          src="./img/icons/ph_phone-thin.png"
-                          alt="phone-thin icon"
-                        />
-                      </a>
-                    </div>
-                    <div class="biodevice__img">
-                      <p class="biodevice__img-description">
-                        Автономная канализация для высокого УГВ
-                      </p>
-                      <h2 class="biodevice__img-title">Евролос Грунт</h2>
-                      <div class="bio-img">
-                        <img
-                          src="./img/biodevice/евролос грунт.png"
-                          alt="biodevice standart 3"
-                        />
-                      </div>
+                <div class="biodevice-one">
+                  <div class="biodevice__top">
+                    <h3>168 700 ₽</h3>
+                  </div>
+                  <div class="biodevice__bottom">
+                    <h3 class="biodevice__top-h3">168 700 ₽</h3>
+
+                    <p class="biodevice__bottom-decscr">
+                      Компрессорная аэрационная установка премиум класса для
+                      монтажа и работы в условиях высокого уровня грунтовых вод
+                    </p>
+                    <p class="biodevice-header">Характеристики:</p>
+                    <ul class="biodevice__list">
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Максимальная очистка стоков
+                      </li>
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Семья от 2-х человек
+                      </li>
+                      <li class="biodevice__item">
+                        &bull;&nbsp;&nbsp;Простота обслуживания
+                      </li>
+                    </ul>
+                    <a class="btn btn-text" data-path="first">
+                      <span>Заказать звонок</span>
+                      <img
+                        src="./img/icons/ph_phone-thin.png"
+                        alt="phone-thin icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="biodevice__img">
+                    <p class="biodevice__img-description">
+                      Автономная канализация для высокого УГВ
+                    </p>
+                    <h2 class="biodevice__img-title">Евролос Грунт</h2>
+                    <div class="bio-img">
+                      <img
+                        src="./img/biodevice/евролос грунт.png"
+                        alt="biodevice standart 3"
+                      />
                     </div>
                   </div>
-                
+                </div>
               </div>
             </div>
             <div class="arrows__next arrows__next1">
@@ -436,9 +494,12 @@
               </svg>
             </div>
           </div>
-          <button class="btn-catalog">
+          <a class="btn-catalog" data-path="first">
             получить полный каталог станций ЕВРОЛОС
-          </button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.4306 5.9494C7.23087 5.94668 7.03852 6.02482 6.89728 6.16607C6.75603 6.30731 6.67789 6.49966 6.6806 6.6994C6.6806 7.11361 7.01639 7.4494 7.4306 7.4494L15.5006 7.4494L6.1606 16.7794C5.95995 16.9664 5.87735 17.248 5.94522 17.5137C6.01308 17.7794 6.22058 17.9869 6.48631 18.0548C6.75205 18.1226 7.03363 18.04 7.2206 17.8394L16.5606 8.4994L16.5606 16.5694C16.5606 16.9836 16.8964 17.3194 17.3106 17.3194C17.7248 17.3194 18.0606 16.9836 18.0606 16.5694L18.0606 6.6894C18.0606 6.27518 17.7248 5.9394 17.3106 5.9394L7.4306 5.9494Z" fill="all"/>
+            </svg>              
+          </a>
         </div>
         <!-- slider 2 -->
         <div class="slider-2">
@@ -461,170 +522,161 @@
             </div>
             <div class="slider-two">
               <div class="slider-list">
-              
-                  <div class="biodevice-two">
-                    <div class="biodevice__top">
-                      <h3>92 000₽</h3>
-                    </div>
-                    <div class="biodevice__bottom">
-                      
-                        <h3 class="biodevice__top-h3">92 000₽</h3>
-                      
-                      <ul class="biodevice__list">
-                        <li class="biodevice__item">
-                          Способ отведения воды:<br />
-                          Универсальная
-                        </li>
-                        <li class="biodevice__item">
-                          Производительность:<br />
-                          400л/сут
-                        </li>
-                        <li class="biodevice__item">
-                          Залповый сброс:<br />
-                          120л 
-                        </li>
-                        <li class="biodevice__item">
-                          Глубина подводящей трубы:<br />
-                          До 30 см 
-                        </li>
-                        <li class="biodevice__item">
-                          Габаритные размеры Д*Ш*В:<br />
-                          860*860*1500 
-                        </li>
-                      </ul>
+                <div class="biodevice-two">
+                  <div class="biodevice__top">
+                    <h3>92 000 ₽</h3>
+                  </div>
+                  <div class="biodevice__bottom">
+                    <h3 class="biodevice__top-h3">92 000 ₽</h3>
 
-                      <a class="btn btn-text" href="">
-                        <span>Заказать звонок</span>
-                        <img
-                          src="./img/icons/ph_phone-thin.png"
-                          alt="phone-thin icon"
-                        />
-                      </a>
-                    </div>
+                    <ul class="biodevice__list">
+                      <li class="biodevice__item">
+                        Способ отведения воды:<br />
+                        Универсальная
+                      </li>
+                      <li class="biodevice__item">
+                        Производительность:<br />
+                        400л/сут
+                      </li>
+                      <li class="biodevice__item">
+                        Залповый сброс:<br />
+                        120л 
+                      </li>
+                      <li class="biodevice__item">
+                        Глубина подводящей трубы:<br />
+                        До 30 см 
+                      </li>
+                      <li class="biodevice__item">
+                        Габаритные размеры Д*Ш*В:<br />
+                        860*860*1500 
+                      </li>
+                    </ul>
 
-                    <div class="biodevice__img">
-                      <p class="biodevice__img-description">Септик</p>
-                      <h2 class="biodevice__img-title">АКВАЛОС 2 UN</h2>
-                      <div class="bio-img">
-                        <img
-                          src="./img/biodevice/аквалос 2 un.png"
-                          alt="biodevice standart 3"
-                        />
-                      </div>
+                    <a class="btn btn-text" data-path="first">
+                      <span>Заказать звонок</span>
+                      <img
+                        src="./img/icons/ph_phone-thin.png"
+                        alt="phone-thin icon"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="biodevice__img">
+                    <p class="biodevice__img-description">Септик</p>
+                    <h2 class="biodevice__img-title">АКВАЛОС 2 UN</h2>
+                    <div class="bio-img">
+                      <img
+                        src="./img/biodevice/аквалос 2 un.png"
+                        alt="biodevice standart 3"
+                      />
                     </div>
                   </div>
-               
+                </div>
               </div>
               <div class="slider-list">
-                
-                  <div class="biodevice-two">
-                    <div class="biodevice__top">
-                      <h3>103 500₽</h3>
-                    </div>
-                    <div class="biodevice__bottom">
-                     
-                        <h3 class="biodevice__top-h3">103 500₽</h3>
-                  
-                      <ul class="biodevice__list">
-                        <li class="biodevice__item">
-                          Способ отведения воды:<br />
-                          Универсальная
-                        </li>
-                        <li class="biodevice__item">
-                          Производительность:<br />
-                          600л/сут
-                        </li>
-                        <li class="biodevice__item">
-                          Залповый сброс:<br />
-                          200л 
-                        </li>
-                        <li class="biodevice__item">
-                          Глубина подводящей трубы:<br />
-                          До 50 см 
-                        </li>
-                        <li class="biodevice__item">
-                          Габаритные размеры Д*Ш*В:<br />
-                          860*860*1850 
-                        </li>
-                      </ul>
-                      <a class="btn btn-text" href="">
-                        <span>Заказать звонок</span>
-                        <img
-                          src="./img/icons/ph_phone-thin.png"
-                          alt="phone-thin icon"
-                        />
-                      </a>
-                    </div>
-                    <div class="biodevice__img">
-                      <p class="biodevice__img-description">
-                        Анаэробный энергонезависимый септик
-                      </p>
-                      <h2 class="biodevice__img-title">АКВАЛОС 3 UN</h2>
-                      <div class="bio-img">
-                        <img
-                          src="./img/biodevice/аквалос 3 un.png"
-                          alt="biodevice standart 3"
-                        />
-                      </div>
+                <div class="biodevice-two">
+                  <div class="biodevice__top">
+                    <h3>103 500 ₽</h3>
+                  </div>
+                  <div class="biodevice__bottom">
+                    <h3 class="biodevice__top-h3">103 500 ₽</h3>
+
+                    <ul class="biodevice__list">
+                      <li class="biodevice__item">
+                        Способ отведения воды:<br />
+                        Универсальная
+                      </li>
+                      <li class="biodevice__item">
+                        Производительность:<br />
+                        600л/сут
+                      </li>
+                      <li class="biodevice__item">
+                        Залповый сброс:<br />
+                        200л 
+                      </li>
+                      <li class="biodevice__item">
+                        Глубина подводящей трубы:<br />
+                        До 50 см 
+                      </li>
+                      <li class="biodevice__item">
+                        Габаритные размеры Д*Ш*В:<br />
+                        860*860*1850 
+                      </li>
+                    </ul>
+                    <a class="btn btn-text" data-path="first">
+                      <span>Заказать звонок</span>
+                      <img
+                        src="./img/icons/ph_phone-thin.png"
+                        alt="phone-thin icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="biodevice__img">
+                    <p class="biodevice__img-description">
+                      Анаэробный энергонезависимый септик
+                    </p>
+                    <h2 class="biodevice__img-title">АКВАЛОС 3 UN</h2>
+                    <div class="bio-img">
+                      <img
+                        src="./img/biodevice/аквалос 3 un.png"
+                        alt="biodevice standart 3"
+                      />
                     </div>
                   </div>
-                
+                </div>
               </div>
               <div class="slider-list">
-                
-                  <div class="biodevice-two">
-                    <div class="biodevice__top">
-                      <h3>118 000₽</h3>
-                    </div>
-                    <div class="biodevice__bottom">
-                      
-                        <h3 class="biodevice__top-h3">118 000₽</h3>
-                      
-                      <ul class="biodevice__list">
-                        <li class="biodevice__item">
-                          Способ отведения воды:<br />
-                          Универсальная
-                        </li>
-                        <li class="biodevice__item">
-                          Производительность:<br />
-                          800л/сут
-                        </li>
-                        <li class="biodevice__item">
-                          Залповый сброс:<br />
-                          230л 
-                        </li>
-                        <li class="biodevice__item">
-                          Глубина подводящей трубы:<br />
-                          До 60 см 
-                        </li>
-                        <li class="biodevice__item">
-                          Габаритные размеры Д*Ш*В:<br />
-                          860*860*2880 
-                        </li>
-                      </ul>
+                <div class="biodevice-two">
+                  <div class="biodevice__top">
+                    <h3>118 000 ₽</h3>
+                  </div>
+                  <div class="biodevice__bottom">
+                    <h3 class="biodevice__top-h3">118 000 ₽</h3>
 
-                      <a class="btn btn-text" href="">
-                        <span>Заказать звонок</span>
-                        <img
-                          src="./img/icons/ph_phone-thin.png"
-                          alt="phone-thin icon"
-                        />
-                      </a>
-                    </div>
-                    <div class="biodevice__img">
-                      <p class="biodevice__img-description">
-                        Анаэробный энергонезависимый септик
-                      </p>
-                      <h2 class="biodevice__img-title">АКВАЛОС 4 UN</h2>
-                      <div class="bio-img">
-                        <img
-                          src="./img/biodevice/аквалос 4 un.png"
-                          alt="biodevice standart 3"
-                        />
-                      </div>
+                    <ul class="biodevice__list">
+                      <li class="biodevice__item">
+                        Способ отведения воды:<br />
+                        Универсальная
+                      </li>
+                      <li class="biodevice__item">
+                        Производительность:<br />
+                        800л/сут
+                      </li>
+                      <li class="biodevice__item">
+                        Залповый сброс:<br />
+                        230л 
+                      </li>
+                      <li class="biodevice__item">
+                        Глубина подводящей трубы:<br />
+                        До 60 см 
+                      </li>
+                      <li class="biodevice__item">
+                        Габаритные размеры Д*Ш*В:<br />
+                        860*860*2880 
+                      </li>
+                    </ul>
+
+                    <a class="btn btn-text" data-path="first">
+                      <span>Заказать звонок</span>
+                      <img
+                        src="./img/icons/ph_phone-thin.png"
+                        alt="phone-thin icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="biodevice__img">
+                    <p class="biodevice__img-description">
+                      Анаэробный энергонезависимый септик
+                    </p>
+                    <h2 class="biodevice__img-title">АКВАЛОС 4 UN</h2>
+                    <div class="bio-img">
+                      <img
+                        src="./img/biodevice/аквалос 4 un.png"
+                        alt="biodevice standart 3"
+                      />
                     </div>
                   </div>
-                
+                </div>
               </div>
             </div>
             <div class="arrows__next arrows__next2">
@@ -642,9 +694,12 @@
               </svg>
             </div>
           </div>
-          <button class="btn-catalog">
+          <a class="btn-catalog" data-path="first">
             получить полный каталог станций АКВАЛОС
-          </button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.4306 5.9494C7.23087 5.94668 7.03852 6.02482 6.89728 6.16607C6.75603 6.30731 6.67789 6.49966 6.6806 6.6994C6.6806 7.11361 7.01639 7.4494 7.4306 7.4494L15.5006 7.4494L6.1606 16.7794C5.95995 16.9664 5.87735 17.248 5.94522 17.5137C6.01308 17.7794 6.22058 17.9869 6.48631 18.0548C6.75205 18.1226 7.03363 18.04 7.2206 17.8394L16.5606 8.4994L16.5606 16.5694C16.5606 16.9836 16.8964 17.3194 17.3106 17.3194C17.7248 17.3194 18.0606 16.9836 18.0606 16.5694L18.0606 6.6894C18.0606 6.27518 17.7248 5.9394 17.3106 5.9394L7.4306 5.9494Z" fill="all"/>
+            </svg>  
+          </a>
         </div>
         <!-- slider 3 -->
         <div class="slider-3">
@@ -669,12 +724,10 @@
               <div class="slider-list">
                 <div class="biodevice-two">
                   <div class="biodevice__top">
-                    <h3>109 800₽</h3>
+                    <h3>109 800 ₽</h3>
                   </div>
                   <div class="biodevice__bottom">
-                 
-                      <h3 class="biodevice__top-h3">109 800₽</h3>
-                
+                    <h3 class="biodevice__top-h3">109 800 ₽</h3>
                     <ul class="biodevice__list">
                       <li class="biodevice__item">Диаметр цилиндра: 920 мм</li>
                       <li class="biodevice__item">
@@ -687,7 +740,7 @@
                       <li class="biodevice__item">ДxШxВ: 1000x1000x2110 мм</li>
                       <li class="biodevice__item">Вес: 81000 г</li>
                     </ul>
-                    <a class="btn btn-text" href="">
+                    <a class="btn btn-text" data-path="first">
                       <span>Заказать звонок</span>
                       <img
                         src="./img/icons/ph_phone-thin.png"
@@ -710,12 +763,11 @@
               <div class="slider-list">
                 <div class="biodevice-two">
                   <div class="biodevice__top">
-                    <h3>119 700₽</h3>
+                    <h3>119 700 ₽</h3>
                   </div>
                   <div class="biodevice__bottom">
-                    
-                      <h3 class="biodevice__top-h3">119 700₽</h3>
-                  
+                    <h3 class="biodevice__top-h3">119 700 ₽</h3>
+
                     <ul class="biodevice__list">
                       <li class="biodevice__item">Диаметр цилиндра: 920 мм</li>
                       <li class="biodevice__item">
@@ -728,7 +780,7 @@
                       <li class="biodevice__item">ДxШxВ: 1000x1000x2380 мм</li>
                       <li class="biodevice__item">Вес: 93000 г</li>
                     </ul>
-                    <a class="btn btn-text" href="">
+                    <a class="btn btn-text" data-path="first">
                       <span>Заказать звонок</span>
                       <img
                         src="./img/icons/ph_phone-thin.png"
@@ -736,7 +788,7 @@
                       />
                     </a>
                   </div>
-                  <div class="biodevice__img">
+                  <div class="biodevice__img biodevice__img-32">
                     <p class="biodevice__img-description">Септик</p>
                     <h2 class="biodevice__img-title biodevice__img-title2">
                       Евробион Раунд 4 стандарт
@@ -753,12 +805,11 @@
               <div class="slider-list">
                 <div class="biodevice-two">
                   <div class="biodevice__top">
-                    <h3>129 250₽</h3>
+                    <h3>129 250 ₽</h3>
                   </div>
                   <div class="biodevice__bottom">
-                   
-                      <h3 class="biodevice__top-h3">129 250₽</h3>
-               
+                    <h3 class="biodevice__top-h3">129 250 ₽</h3>
+
                     <ul class="biodevice__list">
                       <li class="biodevice__item">Диаметр цилиндра: 920 мм</li>
                       <li class="biodevice__item">
@@ -779,7 +830,7 @@
                       />
                     </a>
                   </div>
-                  <div class="biodevice__img">
+                  <div class="biodevice__img biodevice__img-33">
                     <p class="biodevice__img-description">Септик</p>
                     <h2 class="biodevice__img-title biodevice__img-title3">
                       Септик Евробион Раунд 4 миди
@@ -809,9 +860,12 @@
               </svg>
             </div>
           </div>
-          <button class="btn-catalog">
+          <a class="btn-catalog" data-path="first">
             получить полный каталог станций ЕВРОБИОН
-          </button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.4306 5.9494C7.23087 5.94668 7.03852 6.02482 6.89728 6.16607C6.75603 6.30731 6.67789 6.49966 6.6806 6.6994C6.6806 7.11361 7.01639 7.4494 7.4306 7.4494L15.5006 7.4494L6.1606 16.7794C5.95995 16.9664 5.87735 17.248 5.94522 17.5137C6.01308 17.7794 6.22058 17.9869 6.48631 18.0548C6.75205 18.1226 7.03363 18.04 7.2206 17.8394L16.5606 8.4994L16.5606 16.5694C16.5606 16.9836 16.8964 17.3194 17.3106 17.3194C17.7248 17.3194 18.0606 16.9836 18.0606 16.5694L18.0606 6.6894C18.0606 6.27518 17.7248 5.9394 17.3106 5.9394L7.4306 5.9494Z" fill="all"/>
+            </svg>  
+          </a>
         </div>
         <!-- slider 4 -->
         <div class="slider-bottom">
@@ -836,12 +890,11 @@
               <div class="slider-list">
                 <div class="biodevice-two">
                   <div class="biodevice__top">
-                    <h3>172 900 ₽</h3>
+                    <h3>172 900 ₽</h3>
                   </div>
                   <div class="biodevice__bottom">
-                    
-                      <h3 class="biodevice__top-h3">172 900 ₽</h3>
-                   
+                    <h3 class="biodevice__top-h3">172 900 ₽</h3>
+
                     <p class="biodevice-header">Характеристики:</p>
                     <ul class="biodevice__list">
                       <li class="biodevice__item">
@@ -857,7 +910,7 @@
                         &bull;&nbsp;&nbsp;Объём залпового сброса 220 Л
                       </li>
                     </ul>
-                    <a class="btn btn-text" href="">
+                    <a class="btn btn-text" data-path="first">
                       <span>Заказать звонок</span>
                       <img
                         src="./img/icons/ph_phone-thin.png"
@@ -882,10 +935,10 @@
               <div class="slider-list">
                 <div class="biodevice-two">
                   <div class="biodevice__top">
-                    <h3>137 300 ₽</h3>
+                    <h3>137 300 ₽</h3>
                   </div>
                   <div class="biodevice__bottom">
-                  <h3 class="biodevice__top-h3">137 300 ₽</h3>
+                    <h3 class="biodevice__top-h3">137 300 ₽</h3>
                     <p class="biodevice-header">Характеристики:</p>
                     <ul class="biodevice__list">
                       <li class="biodevice__item">
@@ -901,7 +954,7 @@
                         &bull;&nbsp;&nbsp;Объём залпового сброса 175 Л
                       </li>
                     </ul>
-                    <a class="btn btn-text" href="">
+                    <a class="btn btn-text" data-path="first">
                       <span>Заказать звонок</span>
                       <img
                         src="./img/icons/ph_phone-thin.png"
@@ -926,12 +979,11 @@
               <div class="slider-list">
                 <div class="biodevice-two">
                   <div class="biodevice__top">
-                    <h3>195 800 ₽</h3>
+                    <h3>195 800 ₽</h3>
                   </div>
                   <div class="biodevice__bottom">
-                    
-                      <h3 class="biodevice__top-h3">195 800 ₽</h3>
-                    
+                    <h3 class="biodevice__top-h3">195 800 ₽</h3>
+
                     <p class="biodevice-header">Характеристики:</p>
                     <ul class="biodevice__list">
                       <li class="biodevice__item">
@@ -947,7 +999,7 @@
                         &bull;&nbsp;&nbsp;Объём залпового сброса 440 Л
                       </li>
                     </ul>
-                    <a class="btn btn-text" href="">
+                    <a class="btn btn-text" data-path="first">
                       <span>Заказать звонок</span>
                       <img
                         src="./img/icons/ph_phone-thin.png"
@@ -985,7 +1037,7 @@
               </svg>
             </div>
           </div>
-          <button class="btn-catalog">
+          <button class="btn-catalog" data-path="first">
             получить полный каталог станций ТОПАС
           </button>
         </div>
@@ -997,16 +1049,18 @@
           <div class="footer-top">
             <div class="footer__logo">
               <div class="footer__logo-img">
-                <img src="./img/icons/лого.png" alt="logo img" />
-                <div class="footer__logo-text">
-                  <p class="footer__logo-name">
-                    ДОМ<br />
-                    ИНЖИНИРИНГ
-                  </p>
-                  <p class="footer__logo-about">
-                    ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
-                  </p>
-                </div>
+                <a href="./index.html">
+                  <img src="./img/icons/лого.png" alt="logo img" />
+                  <div class="footer__logo-text">
+                    <p class="footer__logo-name">
+                      ДОМ<br />
+                      ИНЖИНИРИНГ
+                    </p>
+                    <p class="footer__logo-about">
+                      ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="footer__social-links">
                 <a
@@ -1074,16 +1128,15 @@
             </div>
             <div class="footer__menu">
               <ul>
-                <li><a href="./index.html#about">О нас</a></li>
-                <li><a href="./index.html#service">Услуги</a></li>
-                <li><a href="./index.html#delivary">Доставка и оплата</a></li>
-                <li><a href="./index.html#contact">Контакты</a></li>
+                <li><a href="./about-our-company.html">О нас</a></li>
+                <li><a href="./uslugu-companii.html">Услуги</a></li>
+                <li><a href="./dostavka-i-oplata.html">Доставка и оплата</a></li>
               </ul>
             </div>
             <div class="footer__contacts">
               <div class="footer__contact-list">
                 <a href="tel:79773363029">8 (977) 336-30-29</a>
-                <a href="mailto: Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+                <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
               </div>
               <div class="footer-btn">
                 <a data-path="first" class="btn">
@@ -1097,18 +1150,44 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <p>© 2017 ИП «Сундупов М.В.». Все права защищены.</p>
-            <p><a href="">Политика персональных данных</a></p>
-            <p>
-              дизайн сайта -
-              <a href="https://ddmotina.tilda.ws" target="_blank"
-                >&nbsp; d_d_motina</a
-              >
-            </p>
+            <a href="">Политика конфиденциальности</a>
+            <div class="footer-bottom__about">
+              <p>© 2017 ИП «Сундупов М.В.». <br />Все права защищены.</p>
+              <p>
+                Разработка сайта -
+                <a href="https://ddmotina.tilda.ws" target="_blank"
+                  >&nbsp; d_d_motina</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__container" data-target="first">
+        <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
+        <form class="form" action="">
+          <div class="input-block">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Электронная почта" />
+            <input type="tel" class="input-tel" placeholder="Телефон" />
+            <input type="text" placeholder="Интересующая услуга" />
+          </div>
+          <div class="bnt-checkbox">
+            <input class="checkbox" type="checkbox" id="checkboxOpd" />
+            <label for="checkboxOpd"></label>
+            <p class="paragraph-opd">
+              Я даю согласие на
+              <a href="">обработку своих персональных данных</a> в соответствии
+              со статьей 9 Федерального закона от 27 июля 2006 г. №152-ФЗ “О
+              персональных данных”
+            </p>
+          </div>
+          <button class="btn btn-text" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

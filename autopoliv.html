@@ -13,20 +13,59 @@
     <header class="header-section">
       <div class="container">
         <div class="header">
-          <div class="logo">
-            <a href="index.html">
-              <img src="./img/logo-main.png" alt="logo img" />
-            </a>
+          <div class="header__logo">
+            <div class="header__logo-img">
+              <a href="./index.html">
+                <img src="./img/icons/лого.png" alt="logo img" />
+                <div class="header__logo-text">
+                  <p class="header__logo-name">
+                    ДОМ<br />
+                    ИНЖИНИРИНГ
+                  </p>
+                  <p class="header__logo-about">
+                    ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
+                  </p>
+                </div>
+              </a>
+            </div>
+               
+              
           </div>
-          <nav class="menu">
-            <ul class="menu__item">
-              <li><a class="menu__link" href="./index.html#about">О нас</a></li>
-              <li><a class="menu__link" href="./index.html#service">Услуги</a></li>
-              <li>
-                <a class="menu__link" href="./index.html#delivary">Доставка и оплата</a>
+          <div class="menu-btn" id="menuBtn" data-burger>
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5882 15.2941C18.5882 17.1134 17.1134 18.5882 15.2941 18.5882C13.4748 18.5882 12 17.1134 12 15.2941C12 13.4748 13.4748 12 15.2941 12C17.1134 12 18.5882 13.4748 18.5882 15.2941Z" fill="all"/>
+              <path d="M28 15.2941C28 17.1134 26.5252 18.5882 24.7059 18.5882C22.8866 18.5882 21.4118 17.1134 21.4118 15.2941C21.4118 13.4748 22.8866 12 24.7059 12C26.5252 12 28 13.4748 28 15.2941Z" fill="all"/>
+              <path d="M18.5882 24.7059C18.5882 26.5252 17.1134 28 15.2941 28C13.4748 28 12 26.5252 12 24.7059C12 22.8866 13.4748 21.4118 15.2941 21.4118C17.1134 21.4118 18.5882 22.8866 18.5882 24.7059Z" fill="all"/>
+              <path d="M28 24.7059C28 26.5252 26.5252 28 24.7059 28C22.8866 28 21.4118 26.5252 21.4118 24.7059C21.4118 22.8866 22.8866 21.4118 24.7059 21.4118C26.5252 21.4118 28 22.8866 28 24.7059Z" fill="all"/>
+            </svg>
+          </div>
+          <nav class="menu" id="menu" data-menu>
+            <img class="btn-close" src="./img/icons/btn-close.svg" alt="">
+            <ul class="menu__item" data-menu-list>
+              <li data-menu-item>
+                <a class="menu__link" href="./about-our-company.html">О нас</a>
               </li>
-              <li><a class="menu__link" href="./index.html#contact">Контакты</a></li>
+
+              <li data-menu-item>
+                <a class="menu__link" href="./uslugu-companii.html">Услуги</a>
+              </li>
+
+              <li data-menu-item>
+                <a class="menu__link" href="./dostavka-i-oplata.html">Доставка и оплата</a>
+              </li>
             </ul>
+            <a class="btn link-menu" data-path="first">
+              <span>Заказать звонок</span>
+              <img
+                src="./img/icons/ph_phone-thin.png"
+                alt="phone-thin icon"
+              />
+            </a>
+            <div class="header__contact_menu">
+              <a href="tel:79773363029">8 (977) 336-30-29</a>
+              <a href="mailto: Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+            </div>
+            <p class="menu-pravo">© 2017 ИП «Сундупов М.В.». Все права защищены.</p>
           </nav>
           <div class="header__contact">
             <a href="tel:79773363029">8 (977) 336-30-29</a>
@@ -35,7 +74,6 @@
         </div>
       </div>
     </header>
-
     <div class="to-the-main">
       <div class="container">
         <a class="to-the-main-link" href="./uslugu-companii.html">
@@ -75,7 +113,7 @@
               затрат времени и ресурсов
             </p>
           </div>
-          <a class="btn btn-text" href="">
+          <a class="btn btn-text" data-path="first">
             <span>Заказать звонок</span>
             <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
           </a>
@@ -126,16 +164,18 @@
           <div class="footer-top">
             <div class="footer__logo">
               <div class="footer__logo-img">
-                <img src="./img/icons/лого.png" alt="logo img" />
-                <div class="footer__logo-text">
-                  <p class="footer__logo-name">
-                    ДОМ<br />
-                    ИНЖИНИРИНГ
-                  </p>
-                  <p class="footer__logo-about">
-                    ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
-                  </p>
-                </div>
+                <a href="./index.html">
+                  <img src="./img/icons/лого.png" alt="logo img" />
+                  <div class="footer__logo-text">
+                    <p class="footer__logo-name">
+                      ДОМ<br />
+                      ИНЖИНИРИНГ
+                    </p>
+                    <p class="footer__logo-about">
+                      ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
+                    </p>
+                  </div>
+                </a>
               </div>
               <div class="footer__social-links">
                 <a
@@ -203,10 +243,9 @@
             </div>
             <div class="footer__menu">
               <ul>
-                <li><a href="./index.html#about">О нас</a></li>
-                <li><a href="./index.html#service">Услуги</a></li>
-                <li><a href="./index.html#delivary">Доставка и оплата</a></li>
-                <li><a href="./index.html#contact">Контакты</a></li>
+                <li><a href="./about-our-company.html">О нас</a></li>
+                <li><a href="./uslugu-companii.html">Услуги</a></li>
+                <li><a href="./dostavka-i-oplata.html">Доставка и оплата</a></li>
               </ul>
             </div>
             <div class="footer__contacts">
@@ -225,17 +264,43 @@
               </div>
             </div>
           </div>
-          <div class="footer-bottom">
-            <p>© 2017 ИП «Сундупов М.В.». Все права защищены.</p>
-            <p><a href="">Политика персональных данных</a></p>
-            <p>
-              дизайн сайта -
-              <a href="https://ddmotina.tilda.ws" target="_blank">&nbsp; d_d_motina</a>
-            </p>
+          <div class="footer-bottom">         
+            <a href="">Политика конфиденциальности</a>
+            <div class="footer-bottom__about">
+              <p>© 2017 ИП «Сундупов М.В.». <br>Все права защищены.</p>
+              <p>
+                Разработка сайта -
+                <a href="https://ddmotina.tilda.ws" target="_blank">&nbsp; d_d_motina</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__container" data-target="first">
+        <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
+        <form class="form" action="">
+          <div class="input-block">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Электронная почта" />
+            <input type="tel" class="input-tel" placeholder="Телефон" />
+            <input type="text" placeholder="Интересующая услуга" />
+          </div>
+          <div class="bnt-checkbox">
+            <input class="checkbox" type="checkbox" id="checkboxOpd" />
+            <label for="checkboxOpd"></label>
+            <p class="paragraph-opd">
+              Я даю согласие на
+              <a href="">обработку своих персональных данных</a> в соответствии
+              со статьей 9 Федерального закона от 27 июля 2006 г. №152-ФЗ “О
+              персональных данных”
+            </p>
+          </div>
+          <button class="btn btn-text" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>
