@@ -55,7 +55,7 @@
             </svg>
           </div>
           <nav class="menu" id="menu" data-menu>
-            <img class="btn-close" src="./img/icons/btn-close.svg" alt="" />
+            <img class="btn-close" src="./img/icons/btn-close.svg" alt="" data-burger/>
             <ul class="menu__item" data-menu-list>
               <li data-menu-item>
                 <a class="menu__link" href="#about">О нас</a>
@@ -73,6 +73,27 @@
               <span>Заказать звонок</span>
               <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
             </a>
+            <div class="modal">
+              <div class="modal__container" data-target="first">
+                <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
+                <form class="form" action="">
+                  <div class="input-block">
+                    <input type="text" placeholder="Имя" />
+                    <input type="text" placeholder="Электронная почта" />
+                    <input type="tel" class="input-tel" placeholder="Телефон" />
+                    <input type="text" placeholder="Интересующая услуга" />
+                  </div>
+                  <div class="bnt-checkbox">
+                    <input class="checkbox" type="checkbox" id="checkboxOpd" />
+                    <label for="checkboxOpd"></label>
+                    <p class="paragraph-opd">
+                      Нажимая кнопку, я даю согласие на <a href="./soglasie-na-obrabotky.html">обработку персональных данных</a> и соглашаюсь с <a href="./politica-obrabotki-pd.html">политикой конфиденциальности</a>
+                    </p>
+                  </div>
+                  <button class="btn btn-text" type="submit">Заказать звонок</button>
+                </form>
+              </div>
+            </div>
             <div class="header__contact_menu">
               <a href="tel:79773363029">8 (977) 336-30-29</a>
               <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
@@ -1190,15 +1211,43 @@
         </div>
       </div>
     </footer>
+    <div class="form-result form-result--ok">
+      <div class="form-result__message">
+        <div class="form-result__left">
+          <h3 class="form-result__title">Ваша заявка отправлена!</h3>
+          <div class="form-result__text-block">
+            <p class="form-result__text">Пожалуйста, дождитесь от нас обратной связи</p>
+            <div class="form-result__right form-result__right--tablet"></div>
+          </div>
+        </div>
+        <div class="form-result__right"></div>
+        <div class="form-result__close">
+        </div>
+      </div>
+    </div>
+    <div class="form-result form-result--false">
+      <div class="form-result__message">
+        <div class="form-result__left">
+          <h3 class="form-result__title">Произошла ошибка</h3>
+          <div class="form-result__text-block">
+            <p class="form-result__text">Убедитесь в том, что вы ввели свои данные правильно</p>
+            <div class="form-result__right form-result__right--tablet"></div>
+          </div>
+        </div>
+        <div class="form-result__right"></div>
+        <div class="form-result__close">
+        </div>
+      </div>
+    </div>
     <div class="modal">
       <div class="modal__container" data-target="first">
         <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
-        <form class="form" action="">
+        <form class="form" id="form" enctype="multipart/form-data" method="post" onsubmit="submitForm(event)" action="../sendmail.php">
           <div class="input-block">
-            <input type="text" placeholder="Имя" />
-            <input type="text" placeholder="Электронная почта" />
-            <input type="tel" class="input-tel" placeholder="Телефон" />
-            <input type="text" placeholder="Интересующая услуга" />
+            <input type="text" placeholder="Имя" required id="name"/>
+            <input type="text" placeholder="Электронная почта" required  />
+            <input type="tel" class="tel-input" placeholder="Телефон" required />
+            <input type="text" placeholder="Интересующая услуга" required/>
           </div>
           <div class="bnt-checkbox">
             <input class="checkbox" type="checkbox" id="checkboxOpd" />
