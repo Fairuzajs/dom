@@ -2225,6 +2225,7 @@ h3 {
     top: 0px;
     padding: 46px 28px 200px;
     max-width: 370px;
+    left:0;
   }
   .slider-two .biodevice-two .biodevice__img-title {
     padding-right: 50px;
@@ -2449,6 +2450,7 @@ h3 {
     background-image: url(../img/biodevice/slider-bottom-page.svg);
     position: absolute;
     top: 0px;
+    left:0;
     padding: 46px 30px 200px;
   }
   .slider-three .biodevice-two .bio-img img {
@@ -2611,6 +2613,7 @@ h3 {
     background-image: url(../img/biodevice/slider-bottom-page.svg);
     position: absolute;
     top: 0px;
+    left:0;
     padding: 46px 30px 200px;
   }
 }
