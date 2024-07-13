@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -5,11 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дом инжиниринг</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/style1.css" />
     <link rel="shortcut icon" href="./img/icons/лого.svg" type="image/x-icon" />
+    <meta name="yandex-verification" content="01d8cfd5d4b491e4" />
   </head>
 
   <body>
+    <!-- Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(97324853, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97324853" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97324853" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <header class="header-section">
       <div class="container">
         <div class="header">
@@ -56,12 +79,7 @@
             </svg>
           </div>
           <nav class="menu" id="menu" data-menu>
-            <img
-              class="btn-close"
-              src="./img/icons/btn-close.svg"
-              alt="btn-close"
-              data-burger
-            />
+            <img class="btn-close" src="./img/icons/btn-close.svg" alt="btn-close" data-burger-close/>
             <ul class="menu__item" data-menu-list>
               <li data-menu-item>
                 <a class="menu__link" href="#about">О нас</a>
@@ -73,16 +91,16 @@
                 <a class="menu__link" href="#delivary">Доставка и оплата</a>
               </li>
             </ul>
-            <button class="btn link-menu" data-path="first">
+            <a class="btn link-menu" data-path="first">
               <span>Заказать звонок</span>
               <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
-            </button>
+            </a>
             <div class="header__contact_menu">
               <a href="tel:79773363029">8 (977) 336-30-29</a>
               <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
             </div>
             <p class="menu-pravo">
-              © 2017 ИП «Сундупов М.В.». Все права защищены.
+              © 2017 ИП Сундупов М.Ц. Все права защищены.
             </p>
           </nav>
           <div class="header__contact">
@@ -116,7 +134,8 @@
           </div>
         </div>
         <div class="hero-img">
-          <img src="./img/hero/background.png" alt="background img" />
+          <img class="hero-img__decstop" src="./img/hero/background.png" alt="background img" />
+          <img class="hero-img__mobile" src="./img/hero/mobile.png" alt="background img" />
         </div>
         <div class="container">
           <div class="hero-bottom">
@@ -146,9 +165,10 @@
             <div class="about__founder-photo">
               <img
                 class="about__founder-photos"
-                src="./img/about/sundupov.png"
-                alt="Основатель Марат Сундупов"
+                src="./img/about/maxim.jpg"
+                alt="Основатель Максим Сундупов"
               />
+              <img class="about-founder__mobile" src="./img/about/founder-mini.png" alt="Основатель Максим Сундупов">
             </div>
           </div>
           <div class="about__digit">
@@ -723,12 +743,12 @@
           <div class="delivary__main">
             <p>
               Компания "Дом Инжиниринг" предлагает удобные условия доставки и
-              гибкую систему оплаты для вашего максимального комфорта. Мы
-              гарантируем доставку и установку инженерных систем для загородных
+              гибкую систему оплаты для вашего максимального комфорта.<br><br>
+               Мы гарантируем доставку и установку инженерных систем для загородных
               домов на ваш участок всего за один день. Кроме того, у нас есть
               возможность оформления покупки в рассрочку на 6 месяцев
-              <span
-                >без дополнительных процентов. Оплата осуществляется по
+              без дополнительных процентов. <br><br><span
+              > Оплата осуществляется по
                 договору, на расчетный счет, и мы рады работать как с
                 физическими, так и с юридическими лицами, предоставляя гибкие
                 варианты оплаты с НДС или без.</span
@@ -815,7 +835,7 @@
               <div class="works-slider__item">
                 <div class="slider__item">
                   <div class="works-slider__text">
-                    Место: Новая Москва, д. Половинки, Троицкий район<br />
+                    Место: Новая Москва, д. Подосинки, Троицкий район<br />
                     Тип объекта: Таунхаус на две семьи Год выполнения: 2023
                     <br /><br />
                     Особенности проекта: <br />Установлено две станции
@@ -1178,7 +1198,7 @@
               >Политика конфиденциальности</a
             >
             <div class="footer-bottom__about">
-              <p>© 2017 ИП «Сундупов М.В.». <br />Все права защищены.</p>
+              <p>© 2017 ИП Сундупов М.Ц. <br />Все права защищены.</p>
               <p>
                 Разработка сайта -
                 <a href="https://ddmotina.tilda.ws" target="_blank"

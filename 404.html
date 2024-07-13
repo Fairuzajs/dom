@@ -7,60 +7,91 @@
     <title>Ошибка!404</title>
     <meta name="description" content=" Компания Дом Инжиниринг предлагает удобные условия доставки и
     гибкую систему оплаты для вашего максимального комфорта.">
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="yandex-verification" content="01d8cfd5d4b491e4" />
+    <link rel="stylesheet" href="css/style1.css" />
     <link rel="shortcut icon" href="./img/icons/лого.svg" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header-section header-section-404">
-        <div class="container">
-            <div class="header">
-                <div class="header__logo">
-                    <div class="header__logo-img">
-                        <a href="./index.html">
-                            <img src="./img/icons/лого.png" alt="logo img" />
-                            <div class="header__logo-text">
-                                <p class="header__logo-name">
-                                    ДОМ<br />
-                                    ИНЖИНИРИНГ
-                                </p>
-                                <p class="header__logo-about">
-                                    ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <nav class="menu" id="menu" data-menu>
-                    <img class="btn-close" src="./img/icons/btn-close.svg" alt="btn-close icon" />
-                    <ul class="menu__item" data-menu-list>
-                      <li data-menu-item>
-                        <a class="menu__link_main" href="./index.html">Главная</a>
-                      </li>
-                    </ul>
-                    <a class="btn link-menu" data-path="first">
-                      <span>Заказать звонок</span>
-                      <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
-                    </a>
-                    <div class="header__contact_menu">
-                      <a href="tel:79773363029">8 (977) 336-30-29</a>
-                      <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
-                    </div>
-                    <p class="menu-pravo">
-                      © 2017 ИП «Сундупов М.В.». Все права защищены.
-                    </p>
-                  </nav>
-                  <!-- <div class="header__contact">
-                    <a href="tel:79773363029">8 (977) 336-30-29</a>
-                    <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
-                  </div> -->
-                <div class="header__contact">
-                    <a href="tel:79773363029">8 (977) 336-30-29</a>
-                    <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
-                </div>
-            </div>
+  <header class="header-section">
+    <div class="container">
+      <div class="header">
+        <div class="header__logo">
+          <div class="header__logo-img">
+            <a href="./index.html">
+              <img src="./img/icons/лого.png" alt="logo img" />
+              <div class="header__logo-text">
+                <p class="header__logo-name">
+                  ДОМ<br />
+                  ИНЖИНИРИНГ
+                </p>
+                <p class="header__logo-about">
+                  ВОДОСНАБЖЕНИЕ И КАНАЛИЗАЦИЯ ПОД КЛЮЧ
+                </p>
+              </div>
+            </a>
+          </div>       
         </div>
-    </header>
+        <div class="menu-btn" id="menuBtn" data-burger>
+          <svg
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.5882 15.2941C18.5882 17.1134 17.1134 18.5882 15.2941 18.5882C13.4748 18.5882 12 17.1134 12 15.2941C12 13.4748 13.4748 12 15.2941 12C17.1134 12 18.5882 13.4748 18.5882 15.2941Z"
+              fill="all"
+            />
+            <path
+              d="M28 15.2941C28 17.1134 26.5252 18.5882 24.7059 18.5882C22.8866 18.5882 21.4118 17.1134 21.4118 15.2941C21.4118 13.4748 22.8866 12 24.7059 12C26.5252 12 28 13.4748 28 15.2941Z"
+              fill="all"
+            />
+            <path
+              d="M18.5882 24.7059C18.5882 26.5252 17.1134 28 15.2941 28C13.4748 28 12 26.5252 12 24.7059C12 22.8866 13.4748 21.4118 15.2941 21.4118C17.1134 21.4118 18.5882 22.8866 18.5882 24.7059Z"
+              fill="all"
+            />
+            <path
+              d="M28 24.7059C28 26.5252 26.5252 28 24.7059 28C22.8866 28 21.4118 26.5252 21.4118 24.7059C21.4118 22.8866 22.8866 21.4118 24.7059 21.4118C26.5252 21.4118 28 22.8866 28 24.7059Z"
+              fill="all"
+            />
+          </svg>
+        </div>
+        <nav class="menu" id="menu" data-menu>
+          <img class="btn-close" src="./img/icons/btn-close.svg" alt="btn-close" data-burger  />
+          <ul class="menu__item" data-menu-list>
+            <li data-menu-item>
+              <a class="menu__link" href="./about-our-company.html">О нас</a>
+            </li>
+
+            <li data-menu-item>
+              <a class="menu__link" href="./uslugu-companii.html">Услуги</a>
+            </li>
+
+            <li data-menu-item>
+              <a class="menu__link" href="./dostavka-i-oplata.html">Доставка и оплата</a>
+            </li>
+          </ul>
+          <button class="btn link-menu" data-path="first">
+            <span>Заказать звонок</span>
+            <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
+          </button>
+          <div class="header__contact_menu">
+            <a href="tel:79773363029">8 (977) 336-30-29</a>
+            <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+          </div>
+          <p class="menu-pravo">
+            © 2017 ИП Сундупов М.Ц. Все права защищены.
+          </p>
+        </nav>
+        <div class="header__contact">
+          <a href="tel:79773363029">8 (977) 336-30-29</a>
+          <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
+        </div>
+      </div>
+    </div>
+  </header>
     <section>
         <div class="container">
             <div class="page404">
@@ -79,27 +110,69 @@
         </div>
     </section>
     <div class="modal">
-        <div class="modal__container" data-target="first">
-            <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
-            <form class="form" action="">
-                <div class="input-block">
-                    <input type="text" placeholder="Имя" />
-                    <input type="text" placeholder="Электронная почта" />
-                    <input type="tel" class="input-tel" placeholder="Телефон" />
-                    <input type="text" placeholder="Интересующая услуга" />
-                </div>
-                <div class="bnt-checkbox">
-                    <input class="checkbox" type="checkbox" id="checkboxOpd" />
-                    <label for="checkboxOpd"></label>
-                    <p class="paragraph-opd">
-                        Нажимая кнопку, я даю согласие на <a href="./soglasie-na-obrabotky.html">обработку персональных
-                            данных</a> и соглашаюсь с <a href="./politica-obrabotki-pd.html">политикой
-                            конфиденциальности</a>
-                    </p>
-                </div>
-                <button class="btn btn-text" type="submit">Заказать звонок</button>
-            </form>
-        </div>
+      <div class="modal__container" data-target="first">
+        <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
+        <form
+          class="form"
+          id="form"
+          enctype="multipart/form-data"
+          method="post"
+          action="./php/sendmail.php"
+          onsubmit="submitForm(event)"
+        >
+          <div class="input-block">
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              required
+              id="name"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Электронная почта"
+              required
+              id="email"
+            />
+            <input
+              type="tel"
+              name="tel"
+              class="tel-input"
+              placeholder="Телефон"
+              required
+              id="tel"
+            />
+            <input
+              type="text"
+              name="message"
+              placeholder="Интересующая услуга"
+              id="message"
+              required
+            />
+          </div>
+          <div class="bnt-checkbox">
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="checkboxOpd"
+              name="checkboxOpd"
+            />
+            <label for="checkboxOpd"></label>
+            <p class="paragraph-opd">
+              Нажимая кнопку, я даю согласие на
+              <a href="./soglasie-na-obrabotky.html"
+                >обработку персональных данных</a
+              >
+              и соглашаюсь с
+              <a href="./politica-obrabotki-pd.html"
+                >политикой конфиденциальности</a
+              >
+            </p>
+          </div>
+          <button class="btn btn-text" type="submit">Заказать звонок</button>
+        </form>
+      </div>
     </div>
     <script src="js/index.bundle.js"></script>
 </body>

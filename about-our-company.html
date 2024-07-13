@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О компании</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/style1.css" />
     <meta
       name="description"
       content="8 лет успешного опыта в инженерных системах для загородных домов"
     />
+    <meta name="yandex-verification" content="01d8cfd5d4b491e4" />
     <link rel="shortcut icon" href="./img/icons/лого.svg" type="image/x-icon" />
+    
   </head>
   <body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(97324853, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97324853" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <header class="header-section">
       <div class="container">
         <div class="header">
@@ -58,7 +77,7 @@
             </svg>
           </div>
           <nav class="menu" id="menu" data-menu>
-            <img class="btn-close" src="./img/icons/btn-close.svg" alt="" />
+            <img class="btn-close" src="./img/icons/btn-close.svg" alt="btn-close" data-burger  />
             <ul class="menu__item" data-menu-list>
               <li data-menu-item>
                 <a class="menu__link" href="./index.html">Главная</a>
@@ -72,16 +91,16 @@
                 <a class="menu__link" href="./dostavka-i-oplata.html">Доставка и оплата</a>
               </li>
             </ul>
-            <a class="btn link-menu" data-path="first">
+            <button class="btn link-menu" data-path="first">
               <span>Заказать звонок</span>
               <img src="./img/icons/ph_phone-thin.png" alt="phone-thin icon" />
-            </a>
+            </button>
             <div class="header__contact_menu">
               <a href="tel:79773363029">8 (977) 336-30-29</a>
               <a href="mailto:Dom_eng@mail.ru">Dom_eng@mail.ru</a>
             </div>
             <p class="menu-pravo">
-              © 2017 ИП «Сундупов М.В.». Все права защищены.
+              © 2017 ИП Сундупов М.Ц. Все права защищены.
             </p>
           </nav>
           <div class="header__contact">
@@ -126,9 +145,10 @@
             </div>
             <div class="about__founder-photo">
               <img class="about__founder-photos"
-                src="./img/about/founder-photo.svg"
-                alt="Марат Сундупов основатель компании"
+                src="./img/about/maxim.jpg"
+                alt="Максим Сундупов основатель компании"
               />
+              <img class="about-founder__mobile" src="./img/about/founder-mini.png" alt="Марат Сундупов основатель компании">
             </div>
           </div>
           <div class="about__digit">
@@ -263,7 +283,7 @@
                     />
                   </svg>
                 </a>
-                <a class="social-links" href="" target="_blank">
+                <a class="social-links" href="./404.html" target="_blank">
                   <svg
                     width="35"
                     height="35"
@@ -332,9 +352,9 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <a href="">Политика конфиденциальности</a>
+            <a href="./politica-obrabotki-pd.html">Политика конфиденциальности</a>
             <div class="footer-bottom__about">
-              <p>© 2017 ИП «Сундупов М.В.». <br />Все права защищены.</p>
+              <p>© 2017 ИП Сундупов М.Ц. <br />Все права защищены.</p>
               <p>
                 Разработка сайта -
                 <a href="https://ddmotina.tilda.ws" target="_blank"
@@ -349,18 +369,62 @@
     <div class="modal">
       <div class="modal__container" data-target="first">
         <h2 class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</h2>
-        <form class="form" action="">
+        <form
+          class="form"
+          id="form"
+          enctype="multipart/form-data"
+          method="post"
+          action="./php/sendmail.php"
+          onsubmit="submitForm(event)"
+        >
           <div class="input-block">
-            <input type="text" placeholder="Имя" />
-            <input type="text" placeholder="Электронная почта" />
-            <input type="tel" class="tel-input" placeholder="Телефон" />
-            <input type="text" placeholder="Интересующая услуга" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              required
+              id="name"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Электронная почта"
+              required
+              id="email"
+            />
+            <input
+              type="tel"
+              name="tel"
+              class="tel-input"
+              placeholder="Телефон"
+              required
+              id="tel"
+            />
+            <input
+              type="text"
+              name="message"
+              placeholder="Интересующая услуга"
+              id="message"
+              required
+            />
           </div>
           <div class="bnt-checkbox">
-            <input class="checkbox" type="checkbox" id="checkboxOpd" />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="checkboxOpd"
+              name="checkboxOpd"
+            />
             <label for="checkboxOpd"></label>
             <p class="paragraph-opd">
-              Нажимая кнопку, я даю согласие на <a href="./soglasie-na-obrabotky.html">обработку персональных данных</a> и соглашаюсь с <a href="./politica-obrabotki-pd.html">политикой конфиденциальности</a>
+              Нажимая кнопку, я даю согласие на
+              <a href="./soglasie-na-obrabotky.html"
+                >обработку персональных данных</a
+              >
+              и соглашаюсь с
+              <a href="./politica-obrabotki-pd.html"
+                >политикой конфиденциальности</a
+              >
             </p>
           </div>
           <button class="btn btn-text" type="submit">Заказать звонок</button>
